@@ -1,0 +1,15 @@
+---
+
+- name: Create telegraf configuration
+  template:
+    src: 'telegraf.conf.j2'
+    dest: '/etc/telegraf/telegraf.conf'
+    mode: '0644'
+  notify:
+    - reload telegraf
+
+- name: ensure telegraf is running and enabled at boot
+  service:
+    name: "telegraf.service"
+    enabled: yes
+    state: started
