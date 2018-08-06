@@ -2,6 +2,7 @@
 
 - name: Check if telegraf is installed
   command: dpkg-query -W telegraf
+  check_mode: no # always run, as we are making no changes
   register: telegraf_check_deb
   failed_when: telegraf_check_deb.rc > 1
   changed_when: "(telegraf_check_deb.rc == 1) or (telegraf_version not in telegraf_check_deb.stdout) "
