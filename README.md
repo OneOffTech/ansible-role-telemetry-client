@@ -53,3 +53,8 @@ System Load or Hard disk usage.
 # the telegraf version to use
 telegraf_version: '1.5.1'
 ```
+
+## Example Config
+```yml
+telegraph_version: '1.5.1'
+```
