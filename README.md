@@ -31,15 +31,19 @@ telegraf_version: '1.5.3'
 telegraf_url: ''
 
 # credentials to use for reporting (write-only)
-telegraf_user: 'user'
-telegraf_password: ''
+telegraf_user: 'agent'
+telegraf_password: 'changeme'
 ```
 
 Example Configuration
 ---------------------
 
 ```yml
-telegraf_version: '1.5.3'
+telegraf_version: "1.5.3"
+
+telegraf_server: "http://monitoring.example.org:8086"
+telegraf_user: "agent"
+telegraf_password: "s3cur3"
 ```
 
 Dependencies

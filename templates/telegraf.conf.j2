@@ -18,8 +18,10 @@
   omit_hostname = false
 
 [[outputs.influxdb]]
-  urls = ["http://monitoring.oneofftech.xyz:8086"]
+  urls = ["{{ telegraf_url }}"]
   database = "telegraf"
+  username = "{{ telegraf_user }}"
+  password = "{{ telegraf_password }}"
   retention_policy = ""
   write_consistency = "any"
   timeout = "5s"
