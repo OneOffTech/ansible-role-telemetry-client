@@ -1,0 +1,18 @@
+---
+galaxy_info:
+  author: OneOffTech
+  description: "Telemetry client with Telegraf"
+  license: MIT
+  min_ansible_version: 1.2
+
+  platforms:
+  - name: Debian
+    versions:
+      - buster
+      - stretch
+  galaxy_tags:
+  - service
+  - systemd
+  - debian
+
+dependencies: []
