@@ -41,7 +41,7 @@ Example Configuration
 ```yml
 telegraf_version: "1.5.3"
 
-telegraf_server: "http://monitoring.example.org:8086"
+telegraf_url: "http://monitoring.example.org:8086"
 telegraf_user: "agent"
 telegraf_password: "s3cur3"
 ```
