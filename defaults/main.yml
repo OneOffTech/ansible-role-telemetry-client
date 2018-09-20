@@ -1,6 +1,6 @@
 ---
 
-telegraf_version: "1.5.3"
+telegraf_version: "1.7.4"
 
 telegraf_url: "http://monitoring.example.com:8086"
 telegraf_user: "agent"
